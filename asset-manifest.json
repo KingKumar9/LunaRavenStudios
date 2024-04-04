@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/LunaRavenStudios/static/css/main.fcb11fef.css",
-    "main.js": "/LunaRavenStudios/static/js/main.95946211.js",
-    "index.html": "/LunaRavenStudios/index.html",
-    "main.fcb11fef.css.map": "/LunaRavenStudios/static/css/main.fcb11fef.css.map",
-    "main.95946211.js.map": "/LunaRavenStudios/static/js/main.95946211.js.map"
+    "main.css": "/static/css/main.fcb11fef.css",
+    "main.js": "/static/js/main.95946211.js",
+    "index.html": "/index.html",
+    "main.fcb11fef.css.map": "/static/css/main.fcb11fef.css.map",
+    "main.95946211.js.map": "/static/js/main.95946211.js.map"
   },
   "entrypoints": [
     "static/css/main.fcb11fef.css",
