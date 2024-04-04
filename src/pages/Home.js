@@ -1,10 +1,10 @@
 import "../App.css";
 import NavigationBar from "../components/NavigationBar";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div class="Home">
-      <div id="scene3d" class="scene3d"></div>
       <NavigationBar prop1={true} />
       <div class="container">
         <div class="content">
@@ -16,11 +16,11 @@ function Home() {
             />
             <h3 class="studios">Studios</h3>
           </div>
-          <a class="ViewGames" href="/our_games">
+          <Link class="ViewGames" to="/our_games">
             <div class="circle"></div>
             view games
             <div class="circle"></div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

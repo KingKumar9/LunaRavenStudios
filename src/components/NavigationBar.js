@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom";
+
 function NavigationBar(props) {
   return (
     <div class="navigation">
-      <a href="/">
+      <Link to="/">
         <img src="/images/logo.png" alt="Company Logo" class="logo" />
-      </a>
+      </Link>
       <nav id="navigationList">
-        <a href="/" class={props.prop1 ? "link active" : "link"}>
+        <Link to="/" class={props.prop1 ? "link active" : "link"}>
           home
-        </a>
-        <a href="/our_games" class={props.prop2 ? "link active" : "link"}>
+        </Link>
+        <Link to="/our_games" class={props.prop2 ? "link active" : "link"}>
           our games
-        </a>
-        <a href="/the_future" class={props.prop3 ? "link active" : "link"}>
+        </Link>
+        <Link to="/the_future" class={props.prop3 ? "link active" : "link"}>
           the future
-        </a>
+        </Link>
         <div class="externalLinks">
           <div class="separator"></div>
           <a

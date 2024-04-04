@@ -6,7 +6,7 @@ function Future() {
     <div class="Screen">
       <NavigationBar prop3={true} />
       <div class="container">
-        <div class="content2">
+        <div class="content">
           <div class="title">
             <h2 class="supportingText">What We Have Planned For</h2>
             <h1 class="rainbowText">The Future</h1>
@@ -24,8 +24,8 @@ function Future() {
                 here all day..
                 <br />
                 <br />
-                Currently, I am creating games/modes/maps on UEFN (Unreal Editor
-                for Fortnite) and levelling up my skills within the game
+                Currently, I am creating games/modes/maps using UEFN (Unreal
+                Editor for Fortnite) and levelling up my skills within the game
                 development industry, focusing on a clear workflow to maximise
                 efficiency and minimise confusion when managing the complexity
                 of different roles as an individual.
@@ -46,7 +46,7 @@ function Future() {
             <img
               class="displayImage"
               src="/images/fullLogo.png"
-              alt="Display Image of LunaRavenStudios Logo"
+              alt="LunaRavenStudios Banner"
             />
           </div>
         </div>

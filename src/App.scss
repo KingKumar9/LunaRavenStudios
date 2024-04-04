@@ -74,7 +74,8 @@
   align-items: center;
 }
 
-.Screen {
+.Screen,
+.Home {
   background-color: #f0e9df;
   overflow-x: hidden;
 }
@@ -88,7 +89,7 @@
   width: 100vw;
   height: auto;
   padding: 24px 64px;
-  z-index: 3;
+  z-index: 9;
   background-color: #f0e9df;
 }
 
@@ -186,6 +187,8 @@ nav {
 .content {
   gap: 90px;
   z-index: 3;
+  justify-content: flex-start;
+  margin: 120px 0 120px 0;
 }
 
 .content2 {
@@ -216,7 +219,9 @@ nav {
 /* Three JS */
 
 .scene3d {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /* View Games Button */

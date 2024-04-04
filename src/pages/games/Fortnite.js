@@ -14,14 +14,18 @@ function Fortnite() {
     <div class="Screen">
       <NavigationBar prop2={true} />
       <div class="container">
-        <div class="content2">
+        <div class="content">
           <div class="title">
             <p class="supportingText">Check Out Our Games On</p>
             <p class="rainbowText">FORTNITE</p>
           </div>
           <div class="cardMiniContainer">
             <div class="cardMini">
-              <img class="cardImg" src="/images/TheFloorIsLava.jpg" alt="" />
+              <img
+                class="cardImg"
+                src="/images/TheFloorIsLava.jpg"
+                alt="The Floor Is Lava Banner"
+              />
               <div class="cardInfo">
                 <h3>The Floor Is Lava!</h3>
                 <button
@@ -35,7 +39,11 @@ function Fortnite() {
               </div>
             </div>
             <div class="cardMini">
-              <img class="cardImg" src="/images/GuessThePrice.png" alt="" />
+              <img
+                class="cardImg"
+                src="/images/GuessThePrice.png"
+                alt="Guess The Price Banner"
+              />
               <div class="cardInfo">
                 <h3>Guess The Price 💎</h3>
                 <button
@@ -49,7 +57,11 @@ function Fortnite() {
               </div>
             </div>
             <div class="cardMini">
-              <img class="cardImg" src="/images/BackroomsGunGame.png" alt="" />
+              <img
+                class="cardImg"
+                src="/images/BackroomsGunGame.png"
+                alt="Backrooms Gun Game Banner"
+              />
               <div class="cardInfo">
                 <h3>Backrooms Gun Game 🔒</h3>
                 <button
@@ -66,7 +78,7 @@ function Fortnite() {
               <img
                 class="cardImg"
                 src="/images/DefaultBlockParkour.jpg"
-                alt=""
+                alt="Default Block Parkour Banner"
               />
               <div class="cardInfo">
                 <h3>Default Block Parkour 🧱</h3>

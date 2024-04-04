@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Fortnite from "./pages/games/Fortnite";
@@ -9,15 +9,16 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Switch>
+      <div id="scene3d" class="scene3d"></div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/our_games" element={<Games />} />
-        <Route exact path="/our_games/fortnite" element={<Fortnite />} />
-        <Route exact path="/our_games/steam" element={<Steam />} />
-        <Route exact path="/the_future" element={<Future />} />
+        <Route path="/our_games" element={<Games />} />
+        <Route path="/our_games/fortnite" element={<Fortnite />} />
+        <Route path="/our_games/steam" element={<Steam />} />
+        <Route path="/the_future" element={<Future />} />
       </Routes>
-    </Router>
+    </Switch>
   );
 }
 

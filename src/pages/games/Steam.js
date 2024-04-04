@@ -6,7 +6,7 @@ function Steam() {
     <div class="Screen">
       <NavigationBar prop2={true} />
       <div class="container">
-        <div class="content2">
+        <div class="content">
           <div class="title">
             <p class="supportingText">Our Steam Games Are</p>
             <p class="rainbowText">COMING SOON</p>
