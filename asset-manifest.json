@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce679426.css",
-    "main.js": "/static/js/main.bf96483f.js",
-    "index.html": "/index.html",
-    "main.ce679426.css.map": "/static/css/main.ce679426.css.map",
-    "main.bf96483f.js.map": "/static/js/main.bf96483f.js.map"
+    "main.css": "/LunaRavenStudios/static/css/main.fcb11fef.css",
+    "main.js": "/LunaRavenStudios/static/js/main.95946211.js",
+    "index.html": "/LunaRavenStudios/index.html",
+    "main.fcb11fef.css.map": "/LunaRavenStudios/static/css/main.fcb11fef.css.map",
+    "main.95946211.js.map": "/LunaRavenStudios/static/js/main.95946211.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce679426.css",
-    "static/js/main.bf96483f.js"
+    "static/css/main.fcb11fef.css",
+    "static/js/main.95946211.js"
   ]
 }
