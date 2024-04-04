@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0e9df;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dad0c4;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4baae;
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 600vw;
+  }
+}
+.rainbowText {
+  font-size: 80px;
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: "slide" 10s infinite linear forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 800;
+  font-size: 120px;
+}
+
+.supportingText {
+  color: #333;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Screen {
+  background-color: #f0e9df;
+  overflow-x: hidden;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 24px 64px;
+  z-index: 3;
+  background-color: #f0e9df;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(20px, 3vw + 10px, 40px);
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.active {
+  font-weight: 700;
+  color: #f0e9df;
+  background-color: #333;
+}
+
+.link:hover {
+  background-color: rgba(51, 51, 51, 0.062745098);
+}
+
+.active:hover {
+  font-weight: 700;
+  color: #f0e9df;
+  background-color: #333;
+}
+
+.logo {
+  width: 40px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.externalLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.separator {
+  width: 1px;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #333;
+  margin-right: 10px;
+}
+
+.socialImages {
+  display: flex;
+  gap: 10px;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.youtube:hover {
+  content: url("../public/images/yt_a.png");
+}
+
+.tiktok:hover {
+  content: url("../public/images/tiktok_a.png");
+}
+
+.twitter:hover {
+  content: url("../public/images/twitter_a.png");
+}
+
+/* Main Content */
+.content,
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  gap: 90px;
+  z-index: 3;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 120px 0 120px 0;
+  gap: 90px;
+}
+
+.text {
+  gap: 24px;
+}
+
+.companyName {
+  width: 40vw;
+}
+
+.studios {
+  text-transform: uppercase;
+  font-size: calc(1vw + 12px);
+  font-weight: 600;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  color: #242226;
+}
+
+/* Three JS */
+.scene3d {
+  position: absolute;
+}
+
+/* View Games Button */
+.ViewGames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(1vw + 300px);
+  height: auto;
+  padding: 20px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  border: 2px solid #242226;
+  background-color: #f0e9df;
+  color: #242226;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.ViewGames:hover {
+  transform: translate(-9px, -12px);
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: "slide" 10s infinite linear forwards;
+  box-shadow: 9px 12px 0px #333;
+  transition: 0.2s;
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  background-color: #242226;
+  border-radius: 50%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  max-width: 35vw;
+  overflow: hidden;
+  height: auto;
+  border: 6px solid #333;
+  border-radius: 2vw;
+  background-color: #333;
+  transition: 0.25s;
+}
+
+.card:hover {
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: "slide" 10s infinite linear forwards;
+  border: 6px solid transparent;
+  box-shadow: 9px 12px 25px #333;
+}
+
+.fortnite {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 2vw 2vw;
+}
+
+.steam {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 30px 30px;
+}
+
+.cardMiniContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 80%;
+  padding: 0 40px;
+}
+
+.cardMini,
+.cardMiniContainer {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.cardMini {
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 360px;
+  overflow: hidden;
+  padding: 10px;
+  transition: 0.25s;
+}
+
+.cardImg {
+  border: 3px solid #333;
+  border-radius: 20px;
+  height: auto;
+}
+
+.cardImg,
+.cardInfo {
+  width: 100%;
+}
+
+.cardInfo {
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, "sans-serif";
+  font-size: 16px;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 5px 0 0;
+}
+.cardInfo button {
+  align-items: center;
+  background-color: #111;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 9px;
+  color: #aaa;
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat, "sans-serif";
+  font-size: 20px;
+  font-weight: 700;
+  gap: 16px;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.cardInfo button:hover {
+  background-color: #f0e9df;
+  border: 3px solid #111;
+  color: #111;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-animation: "slide" 10s linear infinite forwards;
+  background: repeating-linear-gradient(-45deg, red, #ff0 7.14%, #0f0 14.28%, #0ff 21.42%, cyan 28.56%, blue 35.7%, #f0f 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  border: 6px solid rgba(0, 0, 0, 0);
+  box-shadow: 9px 12px 25px #333;
+}
+
+.forTheFuture {
+  background-color: #faf4ec;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  gap: 60px;
+  height: auto;
+  justify-content: flex-start;
+  border-radius: 20px;
+  padding: 45px 60px;
+  width: 80%;
+}
+
+.textBlock {
+  line-height: 36px;
+}
+.textBlock h3 {
+  color: #111;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.textBlock p {
+  color: #222;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.displayImage {
+  border-radius: 20px;
+  width: 100%;
+}/*# sourceMappingURL=App.css.map */
