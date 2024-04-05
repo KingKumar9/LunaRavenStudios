@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
+import { HashRouter as Switch, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Fortnite from "./pages/games/Fortnite";
