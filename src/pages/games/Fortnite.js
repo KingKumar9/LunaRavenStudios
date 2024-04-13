@@ -10,6 +10,7 @@ function Fortnite() {
   const [hoverState2, setHoverState2] = useState(false);
   const [hoverState3, setHoverState3] = useState(false);
   const [hoverState4, setHoverState4] = useState(false);
+  const [hoverState5, setHoverState5] = useState(false);
   return (
     <div class="Screen">
       <NavigationBar prop2={true} />
@@ -89,6 +90,24 @@ function Fortnite() {
                 >
                   {hoverState4 ? <FaCopy /> : <FaRegCopy />}
                   4685-2189-3570
+                </button>
+              </div>
+            </div>
+            <div class="cardMini">
+              <img
+                class="cardImg"
+                src="/images/SpeedRunRace.png"
+                alt="SpeedRun Race Banner"
+              />
+              <div class="cardInfo">
+                <h3>SpeedRun Race 🏃🏽‍♂️💨</h3>
+                <button
+                  onMouseEnter={() => setHoverState5(true)}
+                  onMouseLeave={() => setHoverState5(false)}
+                  onClick={(e) => CopyToClipboard(e)}
+                >
+                  {hoverState5 ? <FaCopy /> : <FaRegCopy />}
+                  2620-9362-4083
                 </button>
               </div>
             </div>
